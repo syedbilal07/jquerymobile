@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Panels</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page" id="pageone">
+				<div data-role="panel" id="mypanel" data-dismissible="true">
+					<h1>This Is Panel Heading</h1>
+					<p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p></p>
+					<a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+				</div>
+			<div data-role="header">
+				<h1>Page Header</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+			<a href="#mypanel" class="ui-btn ui-btn-active ui-btn-inline ui-corner-all ui-shadow ui-icon-alert ui-btn-icon-left">Open Panel</a>
+			</div>
+			
+			<div data-role="footer">
+				<h1>Standard Page Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

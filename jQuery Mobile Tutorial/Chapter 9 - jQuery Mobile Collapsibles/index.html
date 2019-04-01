@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Collapsibles</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>Welcome To My Page</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div data-role="collapsible" data-collapsed="false" data-mini="true" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right">
+				<h1>Click Me. I Am Collapsible</h1>
+				<p>I'm the expanded content.</p>
+					<div data-role="collapsible">
+					<h1>Click Me. I Am The Nested Collapsible</h1>
+					<p>I'm the expanded content.</p>
+					</div>
+				</div>
+			</div>
+			<h1>Accordion</h1>
+			<div data-role="collapsibleset">
+				<div data-role="collapsible">
+					<h1>Click Me. I Am Collapsible</h1>
+					<p>I'm the expanded content.</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="false">
+					<h1>Click Me. I Am Collapsible</h1>
+					<p>I'm the expanded content.</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="false">
+					<h1>Click Me. I Am Collapsible</h1>
+					<p>I'm the expanded content.</p>
+				</div>
+			</div>
+			<div data-role="footer">
+			<h1>This Is Footer.</h1>
+			</div>
+		</div>
+		</body>
+</html>

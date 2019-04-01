@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Mobile Pages</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page" id="main">
+			<div data-role="header">
+			<h1>Welcome To My Home Page!</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<p>This Page Is Created Using jQuery Mobile.</p>
+			<a href="#dialog">Go To Dialog Page.</a>
+			</div>
+			
+			<div data-role="footer">
+			<h1>This Is Footer.</h1>
+			</div>
+		</div>
+		<div data-role="page" data-dialog="true" id="dialog">
+			<div data-role="header">
+			<h1>Welcome To My Home Page!</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the
+			entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
+			<a href="#main">Go To Main Page.</a>
+			</div>
+			
+			<div data-role="footer">
+			<h1>This Is Footer.</h1>
+			</div>
+		</div>
+		</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Filter Items</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>jQuery Mobile Header</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<form class="ui-filterable">
+				<input type="text" data-type="search" id="search" placeholder="Input Text For Search" />
+			</form>
+				<div data-role="collapsibleset" data-filter="true" data-input="#search">
+					<div data-role="collapsible">
+						<h2>Citites</h2>
+						<ul data-role="listview" data-inset="true">
+							<li><a href="#">Copenhagen</a></li>
+							<li><a href="#">Mexico City</a></li>
+							<li><a href="#">Oslo</a></li>
+							<li><a href="#">Paris</a></li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>Countries</h2>
+						<ul data-role="listview" data-inset="true">
+							<li><a href="#">Denmark</a></li>
+							<li><a href="#">France</a></li>
+							<li><a href="#">Mexico</a></li>
+							<li><a href="#">Norway</a></li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>Days</h2>
+						<ul data-role="listview" data-inset="true">
+							<li><a href="#">Monday</a></li>
+							<li><a href="#">Tuesday</a></li>
+							<li><a href="#">Wednesday</a></li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>Months</h2>
+						<ul data-role="listview" data-inset="true">
+							<li><a href="#">January</a></li>
+							<li><a href="#">February</a></li>
+							<li><a href="#">March</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div data-role="footer">
+			<h1>jQuery Mobile Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

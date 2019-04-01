@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Form Select</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>Select Menus</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div data-role="controlgroup">
+					<form>
+						<fieldset class="ui-field-contain">
+							<label for="select">Select Day</label>
+								<select name="day" id="day" multiple data-native-menu="false">
+									<optgroup label="Weekdays">
+										<option value="monday">Monday</option>
+										<option value="tuesday">Tuesday</option>
+										<option value="wednesday">Wednesday</option>
+										<option value="thursday">Thursday</option>
+										<option value="friday">Friday</option>
+									</optgroup>
+									<optgroup label="Weekends">
+										<option value="saturday">Saturday</option>
+										<option value="sunday">Sunday</option>
+									</optgroup>
+								</select>
+								<input type="Submit" value="Submit" data-inline="true" />
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		</body>
+</html>

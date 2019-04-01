@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>List Content</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+			</div>
+			
+			<div data-role="main" class="ui-content">
+					<ul data-role="listview" data-inset="true">
+						<li data-icon="grid">
+							<a href="#chrome"><img src="chrome.ico" alt="chrome" height="200px"/>
+								<h2>Google Chrome</h2>
+								<p>Google Chrome is a free, open-source web browser. Released in 2008.</p>
+							</a>
+							<a href="#chrome"></a>
+						</li>
+						<li data-icon="home" class="ui-alt-icon">
+							<a href="#firefox"><img src="firefox.ico" alt="firefox" height="200px" />
+								<h2>Mozilla Firefox</h2>
+								<p>Firefox is a web browser from Mozilla. Released in 2004.</p>
+							</a>
+							<a href="#firefox"></a>
+						</li>
+					</ul>
+			</div>
+			<h2>Count Bubbles</h2>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#"><span class="ui-li-count">25</span>Inbox</a></li>
+				<li><a href="#"><span class="ui-li-count">21</span>Sent</a></li>
+				<li><a href="#"><span class="ui-li-count">05</span>Drafts</a></li>
+			</ul>
+		</div>
+		<div data-role="page" data-dialog="true" data-transition="pop" id="chrome">
+			<div data-role="main" class="ui-content">
+				<h2>Google Chrome!</h2>
+				<p>Google Chrome is a free, open-source web browser. Released in 2008.</p>
+				<a href="https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B3AA15DE2-63F8-8D15-EC92-2A7B23787BAB%7D%26lang%3Den%26browser%3D3%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable/update2/installers/ChromeSetup.exe" class="ui-btn ui-icon-gear ui-alt-icon ui-btn-icon-right ui-btn-inline">Download</a>
+				<a href="#pageone" data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-right ui-btn-inline">Close</a>
+			</div>
+		</div>
+		<div data-role="page" data-dialog="true" data-transition="pop" id="firefox">
+			<div data-role="main" class="ui-content">
+				<h2>Mozilla Firefox!</h2>
+				<p>Firefox is a web browser from Mozilla. Released in 2004.</p>
+				<a href="https://download.mozilla.org/?product=firefox-47.0-SSL&os=win64&lang=en-GB" class="ui-btn ui-icon-gear ui-alt-icon ui-btn-icon-right ui-btn-inline">Download</a>
+				<a href="#pageone" data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-right ui-btn-inline">Close</a>
+			</div>
+		</div>
+		</body>
+</html>

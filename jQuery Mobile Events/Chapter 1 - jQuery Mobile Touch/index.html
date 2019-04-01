@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Touch</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).on("pagecreate","#pageone",function()
+		{
+			$("p").on("tap",function()
+			{
+				$(this).hide();
+			}
+			);
+		}
+		);
+	</script>
+	</head>
+		<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+			<h1>This Is jQuery Mobile Header</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<h1>jQuery Tap Event</h1>
+			<p>If you tap me, I will disappear</p>
+			<p>Tap me away!</p>
+			<p>Tap me too!</p>
+			</div>
+			
+			<div data-role="footer">
+			<h1>This Is jQuery Mobile Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

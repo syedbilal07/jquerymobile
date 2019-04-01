@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Scroll</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).on("pagecreate","#pageone",function()
+		{
+			$(document).on("scrollstop",function()
+			{
+				alert("You Have Stopped Scrolling.!");
+			}
+			);
+		}
+		);
+	</script>
+	</head>
+		<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+			<h1>This Is jQuery Mobile Header</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<h1>Scroll Stop Event</h1>
+			<p><b>Tip:</b> Try to to resize the window if the scrollbar is not available.</p>
+			<p>Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..
+			Some text to enable scrolling..Some text to enable scrolling..Some text to enable scrolling..</p>
+			</div>
+			
+			<div data-role="footer">
+			<h1>This Is jQuery Mobile Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Pop Ups</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>Welcome To My Page!</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div data-role="popup" id="myPop" class="ui-content">
+				<a href="#myPop" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right" ></a>
+					<p>This Is A Simple Popup.</p>
+				</div>
+				<a href="#myPop" class="ui-btn ui-icon-home ui-btn-icon-left ui-alt-icon" data-rel="popup">Show Popup</a>
+			</div>
+			
+			<div data-role="footer">
+			<h1>This Is Footer.</h1>
+			</div>
+		</div>
+		</body>
+</html>

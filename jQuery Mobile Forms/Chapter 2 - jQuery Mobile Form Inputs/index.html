@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Form Inputs</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>jQuery Mobile Header.</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<a href="#form" data-rel="popup" class="ui-btn ui-btn-inline ui-shadow ui-icon-gear ui-btn-icon-left">Show Popup Form</a>
+				<div data-role="popup" id="form">
+					<form>
+						<div class="ui-field-contain">
+							<fieldset data-role="controlgroup" data-type="horizontal">
+								<label for="firstname">First Name</label><input type="text" placeholder="First Name" />
+								<label for="firstname">Email Address</label><input type="text" placeholder="Email Address" />
+								<label for="firstname">Date Of Birth</label><input type="text" placeholder="Date Of Birth" />
+								<label for="textarea">Additional Information</label><textarea></textarea>
+								<label for="search">Search</label><input type="search" placeholder="Search Anything" />
+								<h3>Choose Your Gender</h3>
+								<label for="male">Male</label><input type="radio" name="gender" id="male" value="male" checked/>
+								<label for="female">Female</label><input type="radio" name="gender" id="female" value="female" /><br /><br />
+								<h3>Choose Colour</h3>
+								<label for="red">Red</label><input type="checkbox" id="red" />
+								<label for="green">Green</label><input type="checkbox" id="green" />
+								<label for="blue">Blue</label><input type="checkbox" id="blue" checked /><br /><br /><br />
+								<input type="submit" value="Submit" data-inline="true" />
+							</fieldset>
+						</div>
+					</form>	
+				</div>
+			</div>
+			
+			<div data-role="footer">
+			<h1>jQuery Mobile Footer.</h1>
+			</div>
+		</div>
+		</body>
+</html>

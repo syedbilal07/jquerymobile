@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Form Sliders</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>jQuery Mobile Sliders</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<form id="form">
+					<fieldset data-role="controlgroup">
+						<label for="points">Points:</label>
+						<input type="range" name="points" value="0" min="0" max="50" id="points" data-show-value="true" data-popup-enabled="true" data-highlight="true"/>
+						<label for="switch">Flip Switch Toggle</label>
+						<input type="checkbox" data-role="flipswitch" name="switch" id="switch" data-on-text="True" data-off-text="False"/>
+						<input type="submit" data-inline="true" value="Submit">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		</body>
+</html>

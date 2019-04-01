@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Events</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).on("pagebeforeshow","#pagetwo",function()
+		{
+			alert("pagebeforeshow event fired - pagetwo is about to be shown");
+		}
+		);
+		$(document).on("pageshow","#pagetwo",function()
+		{
+			alert("pageshow event fired - pagetwo is now shown");
+		}
+		);
+		$(document).on("pagebeforehide","#pagetwo",function()
+		{
+			alert("pagebeforehide event fired - pagetwo is about to be hidden");
+		}
+		);
+		$(document).on("pagehide","#pagetwo",function()
+		{
+			alert("pagehide event fired - pagetwo is now hidden");
+		}
+		);
+	</script>
+	</head>
+		<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+			<h1>This Is jQuery Mobile Header</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<h1>Transition Events</h1>
+			<p>This Is Page One</p>
+			<a href="demo1.html" class="ui-btn ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left">Go To Page Two</a>
+			</div>
+			<div data-role="footer">
+			<h1>This Is jQuery Mobile Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

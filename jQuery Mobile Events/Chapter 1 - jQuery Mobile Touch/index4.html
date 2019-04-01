@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Touch</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).on("pagecreate","#pageone",function()
+		{
+			$("p").on("swiperight",function()
+			{
+				alert("You Have Swiped Right.!");
+			}
+			);
+		}
+		);
+	</script>
+	</head>
+		<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+			<h1>This Is jQuery Mobile Header</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<h1>jQuery Swipe Right Event</h1>
+			<p style="border:1px solid black;margin:5px;">Swipe me in the right direction - do not swipe outside the border!</p>
+			</div>
+			
+			<div data-role="footer">
+			<h1>This Is jQuery Mobile Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

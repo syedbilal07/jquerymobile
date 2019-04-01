@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Filter Items</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>jQuery Mobile Header</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<form class="ui-filterable">
+				<input type="text" data-type="search" id="table" placeholder="Search For Customers" />
+			</form>
+			<table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" data-column-btn-text="Click Me To Show OR Hide Columns" data-filter="true" data-input="#table">
+				<thead>
+					<th data-priority="6">Customer ID</th>
+					<th>Customer Name</th>
+					<th data-priority="1">Contact Name</th>
+					<th data-priority="2">Address</th>
+					<th data-priority="3">City</th>
+					<th data-priority="4">Postal Code</th>
+					<th data-priority="5">Country</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Alfreds Futterkiste</td>
+						<td>Maria Anders</td>
+						<td>Obere Str. 57</td>
+						<td>Berlin</td>
+						<td>12209</td>
+						<td>Germany</td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td>Antonio Moreno Taqueria</td>
+						<td>Antonio Moreno</td>
+						<td>Mataderos 2312</td>
+						<td>Mexico D.F.</td>
+						<td>05023</td>
+						<td>Mexico</td>
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td>Around the Horn</td>
+						<td>Thomas Hardy</td>
+						<td>120 Hanover Sq.</td>
+						<td>London</td>
+						<td>WA1 1DP</td>
+						<td>UK</td>
+					</tr>
+        
+					<tr>
+						<td>4</td>
+						<td>Berglunds snabbkop</td>
+						<td>Christina Berglund</td>
+						<td>Berguvsvagen 8</td>
+						<td>Lulea</td>
+						<td>S-958 22</td>
+						<td>Sweden</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			
+			<div data-role="footer">
+			<h1>jQuery Mobile Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

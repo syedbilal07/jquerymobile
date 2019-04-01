@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Events</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).on("pagebeforecreate","#pageone",function()
+		{
+			alert("pagebeforecreate event fired - the page is about to be initialized. jQuery Mobile has not begun enhancing the page");
+		}
+		);
+		$(document).on("pagecreate","#pageone",function()
+		{
+			alert("pagecreate event fired - the page has been created, but enhancement is not complete");
+		}
+		);
+	</script>
+	</head>
+		<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+			<h1>This Is jQuery Mobile Header</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<h1>Page Initialization Event</h1>
+			<p>The page has been created and enhancement is done!</p>
+			</div>
+			
+			<div data-role="footer">
+			<h1>This Is jQuery Mobile Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

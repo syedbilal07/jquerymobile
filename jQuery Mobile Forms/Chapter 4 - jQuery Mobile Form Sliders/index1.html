@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Form Sliders</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>jQuery Mobile Sliders</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<form>
+					<div data-role="rangeslider">
+						<label for="price-min">Price:</label>
+						<input type="range" id="price-max" value="100" min="0" max="400" data-highlight="true" data-popup-enabled="true" data-show-value="true" />
+						<label for="price-max">Price</label>
+						<input type="range" id="price-max" value="900" min="700" max="1000" data-highlight="true" data-popup-enabled="true" data-show-value="true" />
+					</div>
+						<input type="submit" data-inline="true" value="Submit" />
+				</form>
+			</div>
+		</div>
+		</body>
+</html>

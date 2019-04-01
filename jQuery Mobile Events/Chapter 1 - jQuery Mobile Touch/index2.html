@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Touch</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+	$(document).on("pagecreate","#pageone",function()
+	{
+		$("p").on("swipe",function()
+		{
+			$("span").text("Swipe Detected.!");
+		}
+		);
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+			<h1>This Is jQuery Mobile Header</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<h1>jQuery Swipe Event</h1>
+			<p>Swipe this text or in the box below.</p>
+			<p style="border:1px solid black;height:200px;width:200px;"></p>
+			<p><span style="color:red"></span></p>
+			</div>
+			
+			<div data-role="footer">
+			<h1>This Is jQuery Mobile Footer</h1>
+			</div>
+		</div>
+		</body>
+</html>

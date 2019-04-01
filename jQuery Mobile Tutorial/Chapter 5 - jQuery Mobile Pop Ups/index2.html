@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Pop Ups</title>
+	<link rel="stylesheet" href="../../../Libraries/jQuery Mobile/jquery.mobile.min.css">
+	<script src="../../../Libraries/jQuery Mobile/jquery.min.js"></script>
+	<script src="../../../Libraries/jQuery Mobile/jquery.mobile.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+		<div data-role="page">
+			<div data-role="header">
+			<h1>Welcome To My Home Page!</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+			<a href="#pop" class="ui-btn ui-corner-all ui-icon-lock ui-btn-icon-left ui-shadow ui-alt-icon" data-rel="popup" data-transition="flip" data-position-to="window">Show Popup</a>
+				<div data-role="popup" id="pop" data-arrow="r" data-overlay-theme="a">
+					<div data-role="header">
+					<h1>Welcome To jQuery.</h1>
+					</div>
+					
+					<div data-role="main" class="ui-content">
+					<p>jQuery Mobile Is FUN.!<p>
+					<a href="#" data-rel="back" class="ui-btn ui-icon-back ui-corner-all ui-shadow ui-btn-icon-left">GO Back</a>
+					</div>
+					
+					<div data-role="footer">
+						<h1>This Is Footer.</h1>
+					</div>
+				</div>
+			</div>
+			
+			<div data-role="footer">
+			<h1>Footer Text</h1>
+			</div>
+		</div>
+		</body>
+</html>
